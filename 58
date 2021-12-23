@@ -1,0 +1,9 @@
+/**
+ * @param {string} s
+ * @return {number}
+ */
+const lengthOfLastWord = s => {
+    const arr = s.split(' ').filter(item => item != '');
+ //use split() to split spaces and then filter items that are not spaces需要问蓝精灵
+    return arr[arr.length - 1].length;
+};
