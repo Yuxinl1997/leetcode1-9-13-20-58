@@ -55,7 +55,7 @@ var isValid = function (s) {
     return true;
 };
 
-//58
+//58, use split() to split spaces and then filter items that are not spaces
 const lengthOfLastWord = s => {
     const arr = s.split(' ').filter(item => item != '');
     return arr[arr.length - 1].length;
